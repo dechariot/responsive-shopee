@@ -2,7 +2,7 @@
 Responsive Shopee is the simple responsive clone of Shopee.  
 This project is build for practicing HTML & CSS and followed by Front End Course of Mr.Son Dang.  
 Website: https://dechariot.github.io/w3s-css-template  
-Reference: https://shopee.vn/ 
+Reference: https://shopee.vn/  
 Free Course: https://fullstack.edu.vn/learning/html-css
 
 ## Keyword  
