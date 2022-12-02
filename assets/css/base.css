@@ -1,0 +1,60 @@
+/* 
+Set up variable
+ */
+:root {
+    --primary-color: #ee4d2d;
+    --primary-gradient: linear-gradient(#ee4d2d,#ff7337);
+    --white-color: #fff;
+    --black-color: #000;
+    /* Độ tương phản càng thấp đọc càng đỡ mỏi mắt, nên đặt màu này nhìn đỡ mỏi hơn màu #000 */
+    --text-color: #333; 
+}
+
+* {
+    /* Select tất cả ele kế thừa thuộc tính box-sizing từ parent ele */
+    box-sizing: inherit;
+}
+
+html {
+    /* font-size mặc định 1 số browser là 16px, đặt 62.5% => font-size của các ele trong html hiện tại => 1rem = 10px */
+    font-size: 62.5%;     
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6rem;
+}
+
+.p-0 {
+    padding: 0!important;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+/* Point event */
+.pe-text:hover {
+    cursor: text!important;
+    opacity: 1!important;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+
+.grid {
+    /* Các màn hình lớn hơn 1200px sẽ hiển thị w=1200px */
+    width: 1200px;
+    /* Các màn hình nhỏ hơn 1200px sẽ hiển thị w=100% màn hình*/
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid--full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}

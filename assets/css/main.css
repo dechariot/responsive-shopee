@@ -1,0 +1,116 @@
+.header {
+  /* Header dính trên top, chỉnh right, left 0 để cho ele bám 2 bên => w luôn bằng 100% trình duyệt */
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: var(--primary-gradient);
+  height: 120px;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+}
+
+.top-nav__container {
+}
+
+.top-nav__list {
+}
+
+.top-nav__item {
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  user-select: none;
+}
+
+.top-nav__icon {
+  padding: 2px;
+}
+
+.top-nav__item + .top-nav__item {
+  padding-left: 10px;
+}
+
+.top-nav__link {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+.top-nav__item:hover,
+.top-nav__link:hover {
+  color: rgba(255,255,255,0.8);
+  cursor: pointer;
+}
+
+.top-nav__item:hover .top-nav__download-wrapper {
+  display: block;
+}
+
+.top-nav__separate::after {
+  content: "";
+  display: block;
+  height: 14px;
+  border-left: 1px solid #f96f5c;
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  transform: translateY(-50%);
+}
+
+.top-nav__download-wrapper {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 184px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.top-nav__download-wrapper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -8px;
+  width: 184px;
+  height: 20px;
+}
+
+.top-nav__download {
+  display: flex;
+  flex-flow: column nowrap;
+  position: absolute;
+  background: var(--white-color);
+}
+
+.top-nav__qr-wrapper {
+  display: flex;
+}
+
+.top-nav__qr {
+  width: 180px;
+  margin: 0 auto;
+}
+
+.top-nav__apps-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  margin: 4px auto;
+}
+
+.top-nav__app-wrapper {
+  width: 70px;
+}
+
+.top-nav__app-wrapper:last-child {
+  margin-top: 4px;
+}
+
+.top-nav__app {
+  width: 100%;
+}
