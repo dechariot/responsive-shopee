@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Shopee Việt Nam | Mua và bán trên Shopee</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,6 +18,11 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon/favicon-16.png"
+      type="image/x-icon"
     />
   </head>
   <body>
@@ -34,15 +40,26 @@
               <a href="#" class="top-nav__link">Trở thành Người bán Shopee</a>
             </li>
             <li class="top-nav__item top-nav__separate">
-              <a href="https://shopee.vn/web" target="_blank" rel="noopener noreferrer" class="top-nav__link">Tải ứng dụng</a>
+              <a
+                href="https://shopee.vn/web"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="top-nav__link"
+                >Tải ứng dụng</a
+              >
 
-              <div class="top-nav__download-wrapper mt-8">
+              <a
+                href="https://shopee.vn/web"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Tải ngay Shopee, nhập mã SPT12 giảm tối đa 50k đơn hàng đầu tiên!"
+                class="top-nav__download-wrapper mt-8"
+              >
                 <div class="top-nav__download">
                   <div class="top-nav__qr-wrapper">
                     <img
                       class="top-nav__qr"
                       src="./assets/img/qr/qr_download.png"
-                      alt="QR Code"
                     />
                   </div>
                   <div class="top-nav__apps-wrapper">
@@ -69,18 +86,26 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </li>
             <li class="top-nav__item top-nav__separate pe-text">
               <a href="#" class="top-nav__link pe-text">Kết nối</a>
             </li>
             <li class="top-nav__item p-0">
-              <a href="#" class="top-nav__link"
+              <a
+                href="https://www.facebook.com/ShopeeVN"
+                class="top-nav__link"
+                target="_blank"
+                rel="noopener noreferrer" title="Theo dõi kênh Facebook"
                 ><i class="top-nav__icon fa-brands fa-facebook"></i
               ></a>
             </li>
             <li class="top-nav__item p-0">
-              <a href="#" class="top-nav__link"
+              <a
+                href="https://instagram.com/Shopee_VN"
+                class="top-nav__link"
+                target="_blank"
+                rel="noopener noreferrer" title="Theo dõi kênh Instagram"
                 ><i class="top-nav__icon fa-brands fa-instagram"></i
               ></a>
             </li>
@@ -94,6 +119,99 @@
               <a href="#" class="top-nav__link"
                 ><i class="top-nav__icon fa-solid fa-bell"></i> Thông báo</a
               >
+              <div class="notify-wrapper">
+                <div class="notify">
+                  <header class="notify__header">
+                    <h3>Thông báo mới nhận</h3>
+                  </header>
+                  <div class="notify__body">
+                    <ul class="notify__list">
+                      <li class="notify__item-wrapper">
+                        <a href="" class="notify__item">
+                          <img
+                            src="./assets/img/notify/notify-1.png"
+                            alt=""
+                            class="notify__img"
+                          />
+                          <div class="notify__info-wrapper">
+                            <h4 class="notify__item-heading">
+                              SALE CHỈ TỪ 59K ĐỈNH CAO
+                            </h4>
+                            <span class="notify__item-desc"
+                              >🚚 Thêm Voucher Freeship 40K 🧡 Mã giảm 30K đơn
+                              0Đ 🎒 Balo, khẩu trang, áo sơ mi, dầu gội khô 💎
+                              Cuối tuần săn sale - Chốt đơn đều đều</span
+                            >
+                          </div>
+                        </a>
+                      </li>
+
+                      <li class="notify__item-wrapper">
+                        <a href="" class="notify__item">
+                          <img
+                            src="./assets/img/notify/notify-2.png"
+                            alt=""
+                            class="notify__img"
+                          />
+                          <div class="notify__info-wrapper">
+                            <h4 class="notify__item-heading">
+                              GIẢM 50% TIỀN SHIP, THÊM MÃ 55K
+                            </h4>
+                            <span class="notify__item-desc"
+                              >🚚 Freeship Xtra Plus giảm 50% phí ship ✨ Thêm
+                              mã freeship 55K 💖 Loạt Deal hot 50% mua ngay 🛒
+                              Không lo phí ship - Deal hời giảm sâu</span
+                            >
+                          </div>
+                        </a>
+                      </li>
+
+                      <li class="notify__item-wrapper">
+                        <a href="" class="notify__item">
+                          <img
+                            src="./assets/img/notify/notify-3.png"
+                            alt=""
+                            class="notify__img"
+                          />
+                          <div class="notify__info-wrapper">
+                            <h4 class="notify__item-heading">
+                              DEAL XỊN 50% NGẬP TRÀN
+                            </h4>
+                            <span class="notify__item-desc"
+                              >👔 Áo khoác thể thao còn 280K 🛒 Bàn ủi hơi nước
+                              từ 560K 💎 Robot hút bụi chỉ còn 4.9 triệu 🥰 Mừng
+                              sinh nhật Shopee - Giật deal kẻo phí</span
+                            >
+                          </div>
+                        </a>
+                      </li>
+
+                      <li class="notify__item-wrapper">
+                        <a href="" class="notify__item">
+                          <img
+                            src="./assets/img/notify/notify-4.png"
+                            alt=""
+                            class="notify__img"
+                          />
+                          <div class="notify__info-wrapper">
+                            <h4 class="notify__item-heading">
+                              MÃ HOÀN 200K NGON XỈU ĐÂY!
+                            </h4>
+                            <span class="notify__item-desc"
+                              >⏰ 21H tung mã hoàn xu hấp dẫn ✨ Mã 200K cho đơn
+                              từ 400K 💕 Mã 100K cho đơn từ 50K 💥 Deal ngon giá
+                              tốt - Hốt ngay!</span
+                            >
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <footer class="notify__footer">
+                    <a href="#" class="notify__footer-link"> Xem tất cả </a>
+                  </footer>
+                </div>
+              </div>
             </li>
             <li class="top-nav__item">
               <a href="#" class="top-nav__link"

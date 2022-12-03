@@ -1,5 +1,6 @@
 .header {
-  /* Header dính trên top, chỉnh right, left 0 để cho ele bám 2 bên => w luôn bằng 100% trình duyệt */
+  /* Header on top. 
+  Right, left = 0 => The header'll stick both side => w = 100% */
   position: fixed;
   top: 0;
   right: 0;
@@ -42,7 +43,7 @@
 
 .top-nav__item:hover,
 .top-nav__link:hover {
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8);
   cursor: pointer;
 }
 
@@ -66,9 +67,12 @@
   position: absolute;
   top: 100%;
   width: 184px;
+  background-color: #fff;
+  border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+/* Because hover in li => Create pseudo class to make a connection with top-nav__item parent */
 .top-nav__download-wrapper::before {
   content: "";
   display: block;
@@ -81,7 +85,6 @@
 .top-nav__download {
   display: flex;
   flex-flow: column nowrap;
-  position: absolute;
   background: var(--white-color);
 }
 
@@ -113,4 +116,142 @@
 
 .top-nav__app {
   width: 100%;
+}
+
+.notify-wrapper {
+  display: none;
+  position: absolute;
+  top: 160%;
+  right: 0;
+  width: 402px;
+  min-height: 352px;
+  background-color: var(--white-color);
+  font-size: 1.4rem;
+  color: var(--text-color);
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* Only clickable have pointer */
+  cursor: default;
+  user-select: none;
+  transform-origin: calc(100% - 20px) top;
+  /* Browser will optimize those properties in this class */
+  will-change: opacity, transform;
+  animation: notifyPopOut ease-in 0.2s;
+  /* Support for multi browser (opt) */
+  -o-animation: notifyPopOut ease-in 0.2s;
+  -moz-animation: notifyPopOut ease-in 0.2s;
+  -webkit-animation: notifyPopOut ease-in 0.2s;
+  -ms-animation: notifyPopOut ease-in 0.2s;
+}
+
+.notify-wrapper::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  right: 4px;
+  border-width: 20px 24px;
+  border-style: solid;
+  border-color: transparent transparent var(--white-color) transparent;
+}
+
+/* Optimized UI, when user hover they will unexpectedly disappear   */
+.notify-wrapper::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 0;
+  width: 80px;
+  height: 20px;
+}
+
+.top-nav__item:hover .notify-wrapper {
+  display: block;
+}
+
+@keyframes notifyPopOut {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.notify {
+}
+
+.notify__header {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  width: 400px;
+  height: 40px;
+}
+
+.notify__header h3 {
+  color: rgba(0, 0, 0, 0.24);
+  margin-left: 10px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.notify__body {
+  /* padding: 0 10px; */
+}
+
+.notify__list {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.notify__item-wrapper {
+  background-color: rgba(238, 77, 45, 0.08);
+}
+
+.notify__item-wrapper:hover {
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+.notify__item {
+  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.notify__img {
+  width: 40px;
+}
+
+.notify__info-wrapper {
+  padding: 0 10px;
+}
+
+.notify__item-heading {
+  margin: 0;
+}
+
+.notify__item-desc {
+  display: block;
+  margin-top: 5px;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.notify__footer {
+  height: 40px;
+  text-align: center;
+}
+
+.notify__footer-link {
+  display: inline-block;
+  padding: 12px 20px;
+  color: var(--text-color);
+  text-decoration: none;
+  /* font-size: 1.4rem; */
 }

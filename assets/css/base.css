@@ -3,20 +3,20 @@ Set up variable
  */
 :root {
     --primary-color: #ee4d2d;
-    --primary-gradient: linear-gradient(#ee4d2d,#ff7337);
+    --primary-gradient: linear-gradient(-180deg,#f53d2d,#f63);
     --white-color: #fff;
     --black-color: #000;
-    /* Độ tương phản càng thấp đọc càng đỡ mỏi mắt, nên đặt màu này nhìn đỡ mỏi hơn màu #000 */
-    --text-color: #333; 
+    /* Low contrast => decrease eyestrain */
+    --text-color: rgba(0,0,0,0.8); 
 }
 
 * {
-    /* Select tất cả ele kế thừa thuộc tính box-sizing từ parent ele */
+    /* Select all ele inherit box sizing value from parent ele */
     box-sizing: inherit;
 }
 
 html {
-    /* font-size mặc định 1 số browser là 16px, đặt 62.5% => font-size của các ele trong html hiện tại => 1rem = 10px */
+    /* Default font size in browser ~ 16px => font size = 62,5% (trick) => 1rem = 10px */
     font-size: 62.5%;     
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
@@ -35,6 +35,7 @@ html {
 .pe-text:hover {
     cursor: text!important;
     opacity: 1!important;
+    color: var(--white-color)!important;
 }
 
 .fw-bold {
@@ -43,9 +44,9 @@ html {
 
 
 .grid {
-    /* Các màn hình lớn hơn 1200px sẽ hiển thị w=1200px */
+    /* Screen wide > 1200px: w = 1200*/
     width: 1200px;
-    /* Các màn hình nhỏ hơn 1200px sẽ hiển thị w=100% màn hình*/
+    /* Screen wide < 1200px: w = 100%*/
     max-width: 100%;
     margin: 0 auto;
 }
