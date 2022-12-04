@@ -14,3 +14,5 @@ responsive, pseudo element, pseudo class
 - Release date
 - Add/Update Top nav
 
+### Dec 4, 2022
+- Update header
