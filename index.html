@@ -127,7 +127,7 @@
           <ul class="top-nav__list p-0 m-0">
             <li class="top-nav__item">
               <a href="#" class="top-nav__link"
-                ><i class="top-nav__icon fa-solid fa-bell"></i> Thông báo</a
+                ><i class="top-nav__icon fa-regular fa-bell"></i> Thông báo</a
               >
               <div class="notify-wrapper">
                 <div class="notify">
@@ -225,7 +225,7 @@
             </li>
             <li class="top-nav__item">
               <a href="https://help.shopee.vn/portal" class="top-nav__link"
-                ><i class="top-nav__icon fa-solid fa-circle-info"></i> Hỗ trợ</a
+                ><i class="top-nav__icon fa-regular fa-circle-question"></i> Hỗ trợ</a
               >
             </li>
             <li class="top-nav__item">
@@ -252,6 +252,7 @@
 
       <!-- Header with search -->
       <div class="header-with-search grid">
+        <!-- Header with search logo -->
         <div class="header-with-search__logo-wrapper">
           <a class="header-with-search__logo-link" href="https://shopee.vn/">
             <svg viewBox="0 0 192 65" class="header-with-search__logo">
@@ -265,6 +266,7 @@
           </a>
         </div>
 
+        <!-- Header with search area -->
         <div class="header-with-search__search-wrapper">
           <div class="header-with-search__search">
             <div class="header-with-search__search-input-wrapper">
@@ -305,7 +307,7 @@
             <div class="header-with-search__drawer">
               <div class="header-with-search__selected">
                 <div class="header-with-search__selector-label">
-                  Trong shop này
+                  Tại Shopee Mall
                 </div>
                 <i
                   class="fa-solid fa-angle-down header-with-search__selected-icon"
@@ -314,16 +316,16 @@
                 <!-- Header with search drawer selection -->
                 <div class="header-with-search__selector-list">
                   <div class="header-with-search__selector-option">
-                    <span class="header-with-search__option-label"
-                      >Trong shop này</span
-                    ><i
-                      class="header-with-search__checked-icon fa-solid fa-check"
-                    ></i>
+                    <span class="header-with-search__option-label">
+                      Trong shop này
+                    </span>
                   </div>
                   <div class="header-with-search__selector-option">
                     <span class="header-with-search__option-label"
                       >Tại Shopee Mall</span
-                    >
+                    ><i
+                      class="header-with-search__checked-icon fa-solid fa-check"
+                    ></i>
                   </div>
                 </div>
               </div>
@@ -340,28 +342,116 @@
 
           <!-- Header with search suggestion -->
           <div class="header-with-search__suggestion">
-            <a href="#" class="header-with-search__suggestion-item">Áo khoác</a>
-            <a href="#" class="header-with-search__suggestion-item">Dép</a>
+            <a href="#" class="header-with-search__suggestion-item"
+              >chuột logitech</a
+            >
+            <a href="#" class="header-with-search__suggestion-item"
+              >bàn phím cơ</a
+            >
             <a href="#" class="header-with-search__suggestion-item"
               >Túi xách nữ</a
             >
             <a href="#" class="header-with-search__suggestion-item"
               >Áo croptop</a
             >
-            <a href="#" class="header-with-search__suggestion-item">Váy</a>
+            <a href="#" class="header-with-search__suggestion-item"
+              >cốc cà phê</a
+            >
             <a href="#" class="header-with-search__suggestion-item"
               >Áo khoác nam</a
             >
             <a href="#" class="header-with-search__suggestion-item"
               >Ốp Iphone</a
             >
-            <a href="#" class="header-with-search__suggestion-item">Samsung</a>
+            <a href="#" class="header-with-search__suggestion-item">samsung</a>
           </div>
         </div>
+
+        <!-- Header with search cart  -->
+
+        <!-- header-with-search__cart-empty -->
         <div class="header-with-search__cart-wrapper">
-          <i
-            class="header-with-search__cart-icon fa-solid fa-cart-shopping"
-          ></i>
+          <div class="header-with-search__cart">
+            <i
+              class="header-with-search__cart-icon fa-solid fa-cart-shopping"
+            ></i>
+            <span class="cart__badge">4</span>
+            <div class="header-with-search__cart-drawer-wrapper">
+              <div class="header-with-search__cart-drawer">
+                
+                <!-- Empty cart -->
+                <img
+                  src="./assets/img/cart/no-cart.png"
+                  alt=""
+                  class="no-cart-img"
+                />
+                <span class="no-cart-text">Chưa có sản phẩm</span>
+
+                <!-- Has cart item -->
+                <ul class="header-with-search__cart-drawer-list">
+                  <li class="header-with-search__cart-drawer-heading">Sản phẩm mới thêm</li>
+                  <li class="header-with-search__cart-drawer-item flex">
+                    <div class="header-with-search__cart-drawer-item-img-wrapper">
+                      <img src="./assets/img/cart/item-1.webp" alt="" class="header-with-search__cart-drawer-item-img">
+                    </div>
+                    <div class="header-with-search__cart-drawer-item-detail flex">
+                      <span class="header-with-search__cart-drawer-item-name">
+                        Bộ sản phẩm chăm sóc da nam sáng da, mờ thâm sạm toàn diện Men Stay Simplicity Brightening Trio.
+                      </span>
+                      <span class="header-with-search__cart-drawer-item-price">
+                        đ657.000
+                      </span>
+                    </div>
+                  </li>
+                  <li class="header-with-search__cart-drawer-item flex">
+                    <div class="header-with-search__cart-drawer-item-img-wrapper">
+                      <img src="./assets/img/cart/item-2.jpeg" alt="" class="header-with-search__cart-drawer-item-img">
+                    </div>
+                    <div class="header-with-search__cart-drawer-item-detail flex">
+                      <span class="header-with-search__cart-drawer-item-gift" >Quà tặng</span>
+                      <span class="header-with-search__cart-drawer-item-name">
+                        Khăn mặt, khăn tắm cao cấp Microfiber Men Stay Simplicity 40cm x 75cm
+                      </span>
+                      <span class="header-with-search__cart-drawer-item-price">
+                        đ0
+                      </span>
+                    </div>
+                  </li>
+                  <li class="header-with-search__cart-drawer-item flex">
+                    <div class="header-with-search__cart-drawer-item-img-wrapper">
+                      <img src="./assets/img/cart/item-3.jpeg" alt="Bàn phím cơ Keychron K3 V2 (Hàng chính hãng)" class="header-with-search__cart-drawer-item-img">
+                    </div>
+                    <div class="header-with-search__cart-drawer-item-detail flex">
+                      <span class="header-with-search__cart-drawer-item-name">
+                        Bàn phím cơ Keychron K3 V2 (Hàng chính hãng)
+                      </span>
+                      <span class="header-with-search__cart-drawer-item-price">
+                        đ2.090.000
+                      </span>
+                    </div>
+                  </li>
+                  <li class="header-with-search__cart-drawer-item flex">
+                    <div class="header-with-search__cart-drawer-item-img-wrapper">
+                      <img src="./assets/img/cart/item-4.jpeg" alt="Chuột không dây Logitech M220 Silent" class="header-with-search__cart-drawer-item-img">
+                    </div>
+                    <div class="header-with-search__cart-drawer-item-detail flex">
+                      <span class="header-with-search__cart-drawer-item-name">
+                        Chuột không dây Logitech M220 Silent - giảm ồn, USB, pin 1.5 năm, phù hợp PC/Laptop
+                      </span>
+                      <span class="header-with-search__cart-drawer-item-price">
+                        đ279.000
+                      </span>
+                    </div>
+                  </li>
+                  <li class="header-with-search__cart-drawer-item flex">
+                    <a href="" class="btn btn--primary header-with-search__cart-drawer-check-btn flex">
+                      Xem giỏ hàng
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>

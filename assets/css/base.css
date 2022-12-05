@@ -79,6 +79,9 @@ html {
   display: flex;
 }
 
+.flex {
+  display: flex;
+}
 /* .separate::after {
   content: "";
   display: block;
