@@ -28,6 +28,17 @@ html {
   line-height: 1.6rem;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
 .primary-color {
   color: var(--primary-color)!important;
 }
