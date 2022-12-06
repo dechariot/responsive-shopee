@@ -840,6 +840,65 @@
 
 /* End: Header Section */
 
+/* Begin: Container Section */
+
+.app__container {
+  margin-top: var(--header-height);
+  background-color: #f5f5f5;
+}
+
+.category-wrapper {
+}
+
+.category__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.category__heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.category__heading-icon {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.category-list {
+}
+
+.category-item {
+  position: relative;
+}
+
+.category-item__link {
+  display: block;
+  font-size: 1.4rem;
+  padding: 8px 10px 8px 12px;
+}
+
+.category-item__link.category-item--active {
+  color: var(--primary-color);
+}
+
+.category-item--active::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border-width: 4px 6px;
+  border-style: solid;
+  border-color: transparent transparent transparent var(--primary-color);
+}
+
+/* End: Container Section */
+
 /* Begin: Modal */
 .modal-header {
   background-color: var(--white-color);
