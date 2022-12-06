@@ -176,6 +176,8 @@ a {
 }
 
 .btn.btn--disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
+  color:rgba(0, 0, 0, 0.26);
+  background-color: #F9F9F9;
+  /* opacity: 0.7; */
+  cursor: default;
 }

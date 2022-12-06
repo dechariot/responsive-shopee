@@ -527,8 +527,9 @@
 
     <!-- Begin: Container Section  -->
     <div class="app__container">
-      <div class="grid">
+      <div class="grid app__content">
         <div class="grid__row">
+          <!-- Category -->
           <div class="grid__col-2">
             <nav class="category-wrapper">
               <header class="category__header">
@@ -558,16 +559,22 @@
                   >
                 </li>
                 <li class="category-item">
-                  <a href="#" class="category-item__link">NEW - Aurora Collection</a>
+                  <a href="#" class="category-item__link"
+                    >NEW - Aurora Collection</a
+                  >
                 </li>
                 <li class="category-item">
-                  <a href="#" class="category-item__link">Pro League of Legends Collection</a>
+                  <a href="#" class="category-item__link"
+                    >Pro League of Legends Collection</a
+                  >
                 </li>
                 <li class="category-item">
                   <a href="#" class="category-item__link">Bộ Sưu Tập K/DA</a>
                 </li>
                 <li class="category-item">
-                  <a href="#" class="category-item__link">NEW - Độc Quyền G502 X LIGHTSPEED</a>
+                  <a href="#" class="category-item__link"
+                    >NEW - Độc Quyền G502 X LIGHTSPEED</a
+                  >
                 </li>
                 <li class="category-item">
                   <a href="#" class="category-item__link">Chuột game</a>
@@ -581,7 +588,48 @@
               </ul>
             </nav>
           </div>
-          <div class="grid__col-10"></div>
+
+          <!-- Product list -->
+          <div class="grid__col-10">
+            <div class="product-list">
+              <div class="sort-bar">
+                <span class="sort-bar__label"> Sắp xếp theo </span>
+                <div class="sort-bar__options">
+                  <button class="btn sort-bar__option">Phổ biến</button>
+                  <button class="btn btn--primary sort-bar__option">
+                    Phổ biến
+                  </button>
+                  <button class="btn sort-bar__option">Bán chạy</button>
+                  <div class="sort-bar__selector">
+                    <span class="sort-bar__selector-status">Giá</span>
+                    <i class="fa-solid fa-angle-down"></i>
+                    <div class="sort-bar__selector-status-dropdown">
+                      <div class="sort-bar__selector-status-dropdown-item">Giá: Từ thấp đến cao</div>
+                      <div class="sort-bar__selector-status-dropdown-item">Giá: Từ cao đến thấp</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mini-pagination-controller">
+                  <div class="mini-pagination-controller__state">
+                    <span class="mini-pagination-controller__current">1</span
+                    ><span>/</span
+                    ><span class="mini-pagination-controller__total">14</span>
+                  </div>
+                  <button
+                    class="btn btn--disabled mini-pagination-controller__btn mini-pagination-controller__prev-btn"
+                  >
+                    <i class="fa-solid fa-angle-left"></i>
+                  </button>
+                  <button
+                    class="btn mini-pagination-controller__btn mini-pagination-controller__next-btn"
+                  >
+                    <i class="fa-solid fa-angle-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
