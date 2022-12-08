@@ -16,3 +16,5 @@ responsive, pseudo element, pseudo class
 
 ### Dec 4, 2022
 - Create header
+### Dec 8, 2022
+- Create/update product list view & footer
