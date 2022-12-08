@@ -1034,7 +1034,6 @@
   background-color: var(--white-color);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
-  overflow: hidden;
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
   transition: transform linear 0.1s;
 }
@@ -1052,6 +1051,8 @@
 }
 
 .product-view__img {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
   width: 100%;
   object-fit: contain;
 }
@@ -1536,7 +1537,6 @@
 }
 
 .footer-info__item.footer-info__download-item {
-  box-shadow: 0 1px 1px rgb(0 0 0 / 20%);
   margin-top: 0;
 }
 
@@ -1544,24 +1544,38 @@
   margin-right: 12px;
   height: 102px;
   overflow: hidden;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 20%);
+}
+
+.footer-info__download-item:last-child {
+  display: flex;
+  flex-direction: column;
+  min-height: 102px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer-info__download-link {
   background-color: var(--white-color);
   display: block;
+  
 }
 
 .footer-info__download-img {
-  width: 102px;
+  min-width: 102px;
   height: 102px;
   padding: 4px;
 }
 
 .footer-info__download-store-link {
   background-color: var(--white-color);
-  display: block;
+  display: flex;
+  justify-content: center;
   padding: 4px;
   box-shadow: 0 1px 1px rgb(0 0 0 / 20%);
+  border-radius: 2px;
+  width: 100%;
+  
 }
 
 .footer-info__download-store-link + .footer-info__download-store-link {
@@ -1646,31 +1660,28 @@
 .footer-last-info-second {
   display: flex;
   justify-content: center;
-} 
+}
 
 .footer-last-info-second__list {
   display: flex;
 }
 
 .footer-last-info-second__item {
-
 }
 
 .footer-last-info-second__link {
   display: block;
   width: 120px;
   height: 45px;
-  background: center/contain url(../img/footer/terms/logo-da-dang-ky-bo-cong-thuong.jpg) no-repeat;
+  background: center/contain
+    url(../img/footer/terms/logo-da-dang-ky-bo-cong-thuong.jpg) no-repeat;
   margin: 0 20px;
 }
 
-
 .footer-last-info-third-wrapper {
-
 }
 
 .footer-last-info-third__list {
-
 }
 
 .footer-last-info-third__item:first-child {
@@ -1682,6 +1693,6 @@
 }
 
 .footer-last-info-third__text {
-  color: rgba(0,0,0,.65);
+  color: rgba(0, 0, 0, 0.65);
   font-size: 1.2rem;
 }
