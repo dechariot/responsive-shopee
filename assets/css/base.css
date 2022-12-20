@@ -52,7 +52,7 @@ p {
 }
 
 .pt-8 {
-  padding-top: 8px;
+  padding-top: 8px !important;
 }
 
 .m-0 {
