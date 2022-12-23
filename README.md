@@ -18,3 +18,6 @@ responsive, pseudo element, pseudo class
 - Create header with search
 ### Dec 8, 2022
 - Create/update product list view & footer
+
+### Dec 20, 2022
+- Add grid library (lite)

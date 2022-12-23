@@ -30,7 +30,7 @@
     <!-- Begin: Header -->
     <header class="header">
       <!-- Top nav -->
-      <nav class="top-nav grid wide pt-8">
+      <nav class="top-nav grid wide pt-8 hide-on-mobile-tablet">
         <!-- Top nav left -->
         <div class="top-nav__container">
           <ul class="top-nav__list p-0 m-0">
@@ -281,7 +281,7 @@
       <!-- Header with search -->
       <div class="header-with-search grid wide">
         <!-- Header with search logo -->
-        <div class="header-with-search__logo-wrapper">
+        <div class="header-with-search__logo-wrapper hide-on-mobile-tablet">
           <a class="header-with-search__logo-link" href="https://shopee.vn/">
             <svg viewBox="0 0 192 65" class="header-with-search__logo">
               <g fill-rule="evenodd">
@@ -297,38 +297,37 @@
         <!-- Header with search area -->
         <div class="header-with-search__search-wrapper">
           <div class="header-with-search__search">
-            <div class="header-with-search__search-input-wrapper">
-              <input
-                class="header-with-search__search-input"
-                maxlength="128"
-                autocomplete="off"
-                placeholder="Đăng ký và nhận voucher bạn mới đến 70k!"
-              />
-              <!-- Header with search history -->
-              <div class="header-with-search__history-search">
-                <ul class="header-with-search__history-list">
-                  <li class="header-with-search__history-entry">
-                    <span class="header-with-search__history-heading">
-                      Lịch sử tìm kiếm
-                    </span>
-                  </li>
-                  <li class="header-with-search__history-entry">
-                    <a href="#" class="header-with-search__history-entry-text">
-                      bàn phím cơ
-                    </a>
-                  </li>
-                  <li class="header-with-search__history-entry">
-                    <a href="#" class="header-with-search__history-entry-text">
-                      chuột logitech
-                    </a>
-                  </li>
-                  <li class="header-with-search__history-entry">
-                    <a href="#" class="header-with-search__history-entry-text">
-                      cốc cà phê
-                    </a>
-                  </li>
-                </ul>
-              </div>
+            <input
+              class="header-with-search__search-input"
+              maxlength="128"
+              autocomplete="off"
+              placeholder="Giáng Sinh sắp đến rồi, Shopee ngay!"
+            />
+
+            <!-- Header with search history -->
+            <div class="header-with-search__history-search">
+              <ul class="header-with-search__history-list">
+                <li class="header-with-search__history-entry">
+                  <span class="header-with-search__history-heading">
+                    Lịch sử tìm kiếm
+                  </span>
+                </li>
+                <li class="header-with-search__history-entry">
+                  <a href="#" class="header-with-search__history-entry-text">
+                    bàn phím cơ
+                  </a>
+                </li>
+                <li class="header-with-search__history-entry">
+                  <a href="#" class="header-with-search__history-entry-text">
+                    chuột logitech
+                  </a>
+                </li>
+                <li class="header-with-search__history-entry">
+                  <a href="#" class="header-with-search__history-entry-text">
+                    cốc cà phê
+                  </a>
+                </li>
+              </ul>
             </div>
 
             <!-- Header with search drawer -->
@@ -369,7 +368,7 @@
           </div>
 
           <!-- Header with search suggestion -->
-          <div class="header-with-search__suggestion">
+          <div class="header-with-search__suggestion hide-on-mobile-tablet">
             <a href="#" class="header-with-search__suggestion-item"
               >chuột logitech</a
             >
@@ -396,11 +395,11 @@
         </div>
 
         <!-- Header with search cart  -->
-
         <!-- header-with-search__cart-empty -->
         <div class="header-with-search__cart-wrapper">
           <div class="header-with-search__cart">
-            <i
+            <a href="#" class="header-with-search__cart-link">
+              <i
               class="header-with-search__cart-icon fa-solid fa-cart-shopping"
             ></i>
             <span class="cart__badge">4</span>
@@ -696,9 +695,28 @@
                 </footer>
               </div>
             </div>
+            </a>
           </div>
         </div>
       </div>
+
+      <!-- Alternative sort bar in tablet and mobile -->
+      <ul class="header__sort-bar">
+        <li class="header__sort-bar-item">
+          <a href="#" class="header__sort-bar-link">Liên quan</a>
+        </li>
+        <li class="header__sort-bar-item">
+          <a href="#" class="header__sort-bar-link">Mới nhất</a>
+        </li>
+        <li class="header__sort-bar-item">
+          <a href="#" class="header__sort-bar-link header__sort-bar-link--active">Bán chạy</a>
+        </li>
+        <li class="header__sort-bar-item">
+          <a href="#" class="header__sort-bar-link">Giá
+            <i class="header__sort-bar-icon fa-solid fa-sort"></i>
+          </a>
+        </li>
+      </ul>
     </header>
     <!-- End: Header -->
 
