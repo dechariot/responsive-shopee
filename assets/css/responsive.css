@@ -1,7 +1,7 @@
 /* Mobile $ Tablet */
 @media (max-width: 1023px) {
   :root {
-    --header-height: 80px;
+    --header-height: 68px;
     --top-nav-height: 0px;
   }
 
@@ -27,6 +27,7 @@
   /* Header sort bar show in mobile and tablet */
   .header__sort-bar {
     display: flex;
+    top: calc(var(--header-height) - 1px);
   }
 
   /* App Container Section */
@@ -38,8 +39,6 @@
   .sort-bar {
     display: none;
   }
-
-
 }
 
 /* Tablet */
@@ -57,5 +56,71 @@
 
   .header-with-search {
     padding: 0 16px;
+    justify-content: space-between;
+  }
+
+  .header-with-search__mobile-toggle-left {
+    display: flex;
+  }
+
+  i.header-with-search__toggle-mobile-icon {
+    display: block;
+    font-size: 2.2rem;
+    color: var(--white-color);
+    padding: 0 8px;
+  }
+
+  i.header-with-search__search-mobile-icon {
+    display: block;
+    margin-top: 1px;
+    font-size: 2.1rem;
+    color: var(--white-color);
+    padding: 0 8px;
+  }
+  .header-with-search__cart-wrapper,
+  .header-with-search__logo-wrapper {
+    width: unset;
+  }
+
+  .header-with-search__logo-link {
+    line-height: 0;
+  }
+
+  #header-with-search__search-mobile-checkbox:checked
+    ~ .header-with-search__search-wrapper {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    z-index: 888;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    animation: searchInputMobileShow ease-in 0.2s;
+  }
+
+  @keyframes searchInputMobileShow {
+    from {
+      opacity: 0;
+      transform: translateY(-10%);
+      
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .header-with-search__search {
+    width: 100%;
+    padding: 0 16px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    height: var(--header-sort-bar);
+  }
+
+  .header-with-search__history-search {
+    top: calc(100% - 1px);
+    left: 0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
   }
 }

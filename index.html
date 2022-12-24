@@ -280,8 +280,32 @@
 
       <!-- Header with search -->
       <div class="header-with-search grid wide">
+        
+        <!-- Mobile toggle left -->
+        <div class="header-with-search__mobile-toggle-left">
+          <!-- Header with search toggle top nav -->
+          <label for="header-with-search__toggle-mobile">
+            <i
+              class="header-with-search__toggle-mobile-icon fa-solid fa-bars"
+            ></i>
+          </label>
+
+          <!-- Header with search search checkbox show on mobile -->
+          <label for="header-with-search__search-mobile-checkbox">
+            <i
+              class="header-with-search__search-mobile-icon fa-solid fa-magnifying-glass"
+            ></i>
+          </label>
+        </div>
+
+        <input
+          type="checkbox"
+          hidden
+          id="header-with-search__search-mobile-checkbox"
+        />
+
         <!-- Header with search logo -->
-        <div class="header-with-search__logo-wrapper hide-on-mobile-tablet">
+        <div class="header-with-search__logo-wrapper hide-on-tablet">
           <a class="header-with-search__logo-link" href="https://shopee.vn/">
             <svg viewBox="0 0 192 65" class="header-with-search__logo">
               <g fill-rule="evenodd">
@@ -295,7 +319,7 @@
         </div>
 
         <!-- Header with search area -->
-        <div class="header-with-search__search-wrapper">
+        <div class="header-with-search__search-wrapper hide-on-mobile">
           <div class="header-with-search__search">
             <input
               class="header-with-search__search-input"
@@ -400,301 +424,325 @@
           <div class="header-with-search__cart">
             <a href="#" class="header-with-search__cart-link">
               <i
-              class="header-with-search__cart-icon fa-solid fa-cart-shopping"
-            ></i>
-            <span class="cart__badge">4</span>
-            <div class="header-with-search__cart-drawer-wrapper">
-              <div class="header-with-search__cart-drawer">
-                <!-- Empty cart -->
-                <img
-                  src="./assets/img/cart/no-cart.png"
-                  alt=""
-                  class="no-cart-img"
-                />
-                <span class="no-cart-text">Chưa có sản phẩm</span>
+                class="header-with-search__cart-icon fa-solid fa-cart-shopping"
+              ></i>
+              <span class="cart__badge">4</span>
+              <div class="header-with-search__cart-drawer-wrapper">
+                <div class="header-with-search__cart-drawer">
+                  <!-- Empty cart -->
+                  <img
+                    src="./assets/img/cart/no-cart.png"
+                    alt=""
+                    class="no-cart-img"
+                  />
+                  <span class="no-cart-text">Chưa có sản phẩm</span>
 
-                <!-- Has cart item -->
-                <header class="header-with-search__cart-drawer-heading">
-                  Sản phẩm mới thêm
-                </header>
-                <ul class="header-with-search__cart-drawer-list">
-                  <li class="header-with-search__cart-drawer-item flex">
-                    <div
-                      class="header-with-search__cart-drawer-item-img-wrapper"
-                    >
-                      <img
-                        src="./assets/img/cart/item-1.webp"
-                        alt=""
-                        class="header-with-search__cart-drawer-item-img"
-                      />
-                    </div>
-                    <div
-                      class="header-with-search__cart-drawer-item-detail flex"
-                    >
-                      <span class="header-with-search__cart-drawer-item-name">
-                        Bộ sản phẩm chăm sóc da nam sáng da, mờ thâm sạm toàn
-                        diện Men Stay Simplicity Brightening Trio.
-                      </span>
-                      <span class="header-with-search__cart-drawer-item-price">
-                        &#8363;657.000
-                      </span>
-                    </div>
-                  </li>
-                  <li class="header-with-search__cart-drawer-item flex">
-                    <div
-                      class="header-with-search__cart-drawer-item-img-wrapper"
-                    >
-                      <img
-                        src="./assets/img/cart/item-2.jpeg"
-                        alt=""
-                        class="header-with-search__cart-drawer-item-img"
-                      />
-                    </div>
-                    <div
-                      class="header-with-search__cart-drawer-item-detail flex"
-                    >
-                      <span class="header-with-search__cart-drawer-item-gift"
-                        >Quà tặng</span
+                  <!-- Has cart item -->
+                  <header class="header-with-search__cart-drawer-heading">
+                    Sản phẩm mới thêm
+                  </header>
+                  <ul class="header-with-search__cart-drawer-list">
+                    <li class="header-with-search__cart-drawer-item flex">
+                      <div
+                        class="header-with-search__cart-drawer-item-img-wrapper"
                       >
-                      <span class="header-with-search__cart-drawer-item-name">
-                        Khăn mặt, khăn tắm cao cấp Microfiber Men Stay
-                        Simplicity 40cm x 75cm
-                      </span>
-                      <span class="header-with-search__cart-drawer-item-price">
-                        &#8363;0
-                      </span>
-                    </div>
-                  </li>
-                  <li class="header-with-search__cart-drawer-item flex">
-                    <div
-                      class="header-with-search__cart-drawer-item-img-wrapper"
-                    >
-                      <img
-                        src="./assets/img/cart/item-3.jpeg"
-                        alt="Bàn phím cơ Keychron K3 V2 (Hàng chính hãng)"
-                        class="header-with-search__cart-drawer-item-img"
-                      />
-                    </div>
-                    <div
-                      class="header-with-search__cart-drawer-item-detail flex"
-                    >
-                      <span class="header-with-search__cart-drawer-item-name">
-                        Bàn phím cơ Keychron K3 V2 (Hàng chính hãng)
-                      </span>
-                      <span class="header-with-search__cart-drawer-item-price">
-                        &#8363;2.090.000
-                      </span>
-                    </div>
-                  </li>
-                  <li class="header-with-search__cart-drawer-item flex">
-                    <div
-                      class="header-with-search__cart-drawer-item-img-wrapper"
-                    >
-                      <img
-                        src="./assets/img/cart/item-4.jpeg"
-                        alt="Chuột không dây Logitech M220 Silent"
-                        class="header-with-search__cart-drawer-item-img"
-                      />
-                    </div>
-                    <div
-                      class="header-with-search__cart-drawer-item-detail flex"
-                    >
-                      <span class="header-with-search__cart-drawer-item-name">
-                        Chuột không dây Logitech M220 Silent - giảm ồn, USB, pin
-                        1.5 năm, phù hợp PC/Laptop
-                      </span>
-                      <span class="header-with-search__cart-drawer-item-price">
-                        &#8363;279.000
-                      </span>
-                    </div>
-                  </li>
-                  <!--  -->
-                  <li class="header-with-search__cart-drawer-item flex">
-                    <div
-                      class="header-with-search__cart-drawer-item-img-wrapper"
-                    >
-                      <img
-                        src="./assets/img/cart/item-4.jpeg"
-                        alt="Chuột không dây Logitech M220 Silent"
-                        class="header-with-search__cart-drawer-item-img"
-                      />
-                    </div>
-                    <div
-                      class="header-with-search__cart-drawer-item-detail flex"
-                    >
-                      <span class="header-with-search__cart-drawer-item-name">
-                        Chuột không dây Logitech M220 Silent - giảm ồn, USB, pin
-                        1.5 năm, phù hợp PC/Laptop
-                      </span>
-                      <span class="header-with-search__cart-drawer-item-price">
-                        &#8363;279.000
-                      </span>
-                    </div>
-                  </li>
-                  <li class="header-with-search__cart-drawer-item flex">
-                    <div
-                      class="header-with-search__cart-drawer-item-img-wrapper"
-                    >
-                      <img
-                        src="./assets/img/cart/item-4.jpeg"
-                        alt="Chuột không dây Logitech M220 Silent"
-                        class="header-with-search__cart-drawer-item-img"
-                      />
-                    </div>
-                    <div
-                      class="header-with-search__cart-drawer-item-detail flex"
-                    >
-                      <span class="header-with-search__cart-drawer-item-name">
-                        Chuột không dây Logitech M220 Silent - giảm ồn, USB, pin
-                        1.5 năm, phù hợp PC/Laptop
-                      </span>
-                      <span class="header-with-search__cart-drawer-item-price">
-                        &#8363;279.000
-                      </span>
-                    </div>
-                  </li>
-                  <li class="header-with-search__cart-drawer-item flex">
-                    <div
-                      class="header-with-search__cart-drawer-item-img-wrapper"
-                    >
-                      <img
-                        src="./assets/img/cart/item-4.jpeg"
-                        alt="Chuột không dây Logitech M220 Silent"
-                        class="header-with-search__cart-drawer-item-img"
-                      />
-                    </div>
-                    <div
-                      class="header-with-search__cart-drawer-item-detail flex"
-                    >
-                      <span class="header-with-search__cart-drawer-item-name">
-                        Chuột không dây Logitech M220 Silent - giảm ồn, USB, pin
-                        1.5 năm, phù hợp PC/Laptop
-                      </span>
-                      <span class="header-with-search__cart-drawer-item-price">
-                        &#8363;279.000
-                      </span>
-                    </div>
-                  </li>
-                  <li class="header-with-search__cart-drawer-item flex">
-                    <div
-                      class="header-with-search__cart-drawer-item-img-wrapper"
-                    >
-                      <img
-                        src="./assets/img/cart/item-4.jpeg"
-                        alt="Chuột không dây Logitech M220 Silent"
-                        class="header-with-search__cart-drawer-item-img"
-                      />
-                    </div>
-                    <div
-                      class="header-with-search__cart-drawer-item-detail flex"
-                    >
-                      <span class="header-with-search__cart-drawer-item-name">
-                        Chuột không dây Logitech M220 Silent - giảm ồn, USB, pin
-                        1.5 năm, phù hợp PC/Laptop
-                      </span>
-                      <span class="header-with-search__cart-drawer-item-price">
-                        &#8363;279.000
-                      </span>
-                    </div>
-                  </li>
-                  <li class="header-with-search__cart-drawer-item flex">
-                    <div
-                      class="header-with-search__cart-drawer-item-img-wrapper"
-                    >
-                      <img
-                        src="./assets/img/cart/item-4.jpeg"
-                        alt="Chuột không dây Logitech M220 Silent"
-                        class="header-with-search__cart-drawer-item-img"
-                      />
-                    </div>
-                    <div
-                      class="header-with-search__cart-drawer-item-detail flex"
-                    >
-                      <span class="header-with-search__cart-drawer-item-name">
-                        Chuột không dây Logitech M220 Silent - giảm ồn, USB, pin
-                        1.5 năm, phù hợp PC/Laptop
-                      </span>
-                      <span class="header-with-search__cart-drawer-item-price">
-                        &#8363;279.000
-                      </span>
-                    </div>
-                  </li>
-                  <li class="header-with-search__cart-drawer-item flex">
-                    <div
-                      class="header-with-search__cart-drawer-item-img-wrapper"
-                    >
-                      <img
-                        src="./assets/img/cart/item-4.jpeg"
-                        alt="Chuột không dây Logitech M220 Silent"
-                        class="header-with-search__cart-drawer-item-img"
-                      />
-                    </div>
-                    <div
-                      class="header-with-search__cart-drawer-item-detail flex"
-                    >
-                      <span class="header-with-search__cart-drawer-item-name">
-                        Chuột không dây Logitech M220 Silent - giảm ồn, USB, pin
-                        1.5 năm, phù hợp PC/Laptop
-                      </span>
-                      <span class="header-with-search__cart-drawer-item-price">
-                        &#8363;279.000
-                      </span>
-                    </div>
-                  </li>
-                  <li class="header-with-search__cart-drawer-item flex">
-                    <div
-                      class="header-with-search__cart-drawer-item-img-wrapper"
-                    >
-                      <img
-                        src="./assets/img/cart/item-4.jpeg"
-                        alt="Chuột không dây Logitech M220 Silent"
-                        class="header-with-search__cart-drawer-item-img"
-                      />
-                    </div>
-                    <div
-                      class="header-with-search__cart-drawer-item-detail flex"
-                    >
-                      <span class="header-with-search__cart-drawer-item-name">
-                        Chuột không dây Logitech M220 Silent - giảm ồn, USB, pin
-                        1.5 năm, phù hợp PC/Laptop
-                      </span>
-                      <span class="header-with-search__cart-drawer-item-price">
-                        &#8363;279.000
-                      </span>
-                    </div>
-                  </li>
-                  <li class="header-with-search__cart-drawer-item flex">
-                    <div
-                      class="header-with-search__cart-drawer-item-img-wrapper"
-                    >
-                      <img
-                        src="./assets/img/cart/item-4.jpeg"
-                        alt="Chuột không dây Logitech M220 Silent"
-                        class="header-with-search__cart-drawer-item-img"
-                      />
-                    </div>
-                    <div
-                      class="header-with-search__cart-drawer-item-detail flex"
-                    >
-                      <span class="header-with-search__cart-drawer-item-name">
-                        Chuột không dây Logitech M220 Silent - giảm ồn, USB, pin
-                        1.5 năm, phù hợp PC/Laptop
-                      </span>
-                      <span class="header-with-search__cart-drawer-item-price">
-                        &#8363;279.000
-                      </span>
-                    </div>
-                  </li>
-                </ul>
-                <footer class="header-with-search__cart-drawer-item flex">
-                  <a
-                    href=""
-                    class="btn btn--primary header-with-search__cart-drawer-check-btn flex"
-                    >Xem giỏ hàng
-                  </a>
-                </footer>
+                        <img
+                          src="./assets/img/cart/item-1.webp"
+                          alt=""
+                          class="header-with-search__cart-drawer-item-img"
+                        />
+                      </div>
+                      <div
+                        class="header-with-search__cart-drawer-item-detail flex"
+                      >
+                        <span class="header-with-search__cart-drawer-item-name">
+                          Bộ sản phẩm chăm sóc da nam sáng da, mờ thâm sạm toàn
+                          diện Men Stay Simplicity Brightening Trio.
+                        </span>
+                        <span
+                          class="header-with-search__cart-drawer-item-price"
+                        >
+                          &#8363;657.000
+                        </span>
+                      </div>
+                    </li>
+                    <li class="header-with-search__cart-drawer-item flex">
+                      <div
+                        class="header-with-search__cart-drawer-item-img-wrapper"
+                      >
+                        <img
+                          src="./assets/img/cart/item-2.jpeg"
+                          alt=""
+                          class="header-with-search__cart-drawer-item-img"
+                        />
+                      </div>
+                      <div
+                        class="header-with-search__cart-drawer-item-detail flex"
+                      >
+                        <span class="header-with-search__cart-drawer-item-gift"
+                          >Quà tặng</span
+                        >
+                        <span class="header-with-search__cart-drawer-item-name">
+                          Khăn mặt, khăn tắm cao cấp Microfiber Men Stay
+                          Simplicity 40cm x 75cm
+                        </span>
+                        <span
+                          class="header-with-search__cart-drawer-item-price"
+                        >
+                          &#8363;0
+                        </span>
+                      </div>
+                    </li>
+                    <li class="header-with-search__cart-drawer-item flex">
+                      <div
+                        class="header-with-search__cart-drawer-item-img-wrapper"
+                      >
+                        <img
+                          src="./assets/img/cart/item-3.jpeg"
+                          alt="Bàn phím cơ Keychron K3 V2 (Hàng chính hãng)"
+                          class="header-with-search__cart-drawer-item-img"
+                        />
+                      </div>
+                      <div
+                        class="header-with-search__cart-drawer-item-detail flex"
+                      >
+                        <span class="header-with-search__cart-drawer-item-name">
+                          Bàn phím cơ Keychron K3 V2 (Hàng chính hãng)
+                        </span>
+                        <span
+                          class="header-with-search__cart-drawer-item-price"
+                        >
+                          &#8363;2.090.000
+                        </span>
+                      </div>
+                    </li>
+                    <li class="header-with-search__cart-drawer-item flex">
+                      <div
+                        class="header-with-search__cart-drawer-item-img-wrapper"
+                      >
+                        <img
+                          src="./assets/img/cart/item-4.jpeg"
+                          alt="Chuột không dây Logitech M220 Silent"
+                          class="header-with-search__cart-drawer-item-img"
+                        />
+                      </div>
+                      <div
+                        class="header-with-search__cart-drawer-item-detail flex"
+                      >
+                        <span class="header-with-search__cart-drawer-item-name">
+                          Chuột không dây Logitech M220 Silent - giảm ồn, USB,
+                          pin 1.5 năm, phù hợp PC/Laptop
+                        </span>
+                        <span
+                          class="header-with-search__cart-drawer-item-price"
+                        >
+                          &#8363;279.000
+                        </span>
+                      </div>
+                    </li>
+                    <!--  -->
+                    <li class="header-with-search__cart-drawer-item flex">
+                      <div
+                        class="header-with-search__cart-drawer-item-img-wrapper"
+                      >
+                        <img
+                          src="./assets/img/cart/item-4.jpeg"
+                          alt="Chuột không dây Logitech M220 Silent"
+                          class="header-with-search__cart-drawer-item-img"
+                        />
+                      </div>
+                      <div
+                        class="header-with-search__cart-drawer-item-detail flex"
+                      >
+                        <span class="header-with-search__cart-drawer-item-name">
+                          Chuột không dây Logitech M220 Silent - giảm ồn, USB,
+                          pin 1.5 năm, phù hợp PC/Laptop
+                        </span>
+                        <span
+                          class="header-with-search__cart-drawer-item-price"
+                        >
+                          &#8363;279.000
+                        </span>
+                      </div>
+                    </li>
+                    <li class="header-with-search__cart-drawer-item flex">
+                      <div
+                        class="header-with-search__cart-drawer-item-img-wrapper"
+                      >
+                        <img
+                          src="./assets/img/cart/item-4.jpeg"
+                          alt="Chuột không dây Logitech M220 Silent"
+                          class="header-with-search__cart-drawer-item-img"
+                        />
+                      </div>
+                      <div
+                        class="header-with-search__cart-drawer-item-detail flex"
+                      >
+                        <span class="header-with-search__cart-drawer-item-name">
+                          Chuột không dây Logitech M220 Silent - giảm ồn, USB,
+                          pin 1.5 năm, phù hợp PC/Laptop
+                        </span>
+                        <span
+                          class="header-with-search__cart-drawer-item-price"
+                        >
+                          &#8363;279.000
+                        </span>
+                      </div>
+                    </li>
+                    <li class="header-with-search__cart-drawer-item flex">
+                      <div
+                        class="header-with-search__cart-drawer-item-img-wrapper"
+                      >
+                        <img
+                          src="./assets/img/cart/item-4.jpeg"
+                          alt="Chuột không dây Logitech M220 Silent"
+                          class="header-with-search__cart-drawer-item-img"
+                        />
+                      </div>
+                      <div
+                        class="header-with-search__cart-drawer-item-detail flex"
+                      >
+                        <span class="header-with-search__cart-drawer-item-name">
+                          Chuột không dây Logitech M220 Silent - giảm ồn, USB,
+                          pin 1.5 năm, phù hợp PC/Laptop
+                        </span>
+                        <span
+                          class="header-with-search__cart-drawer-item-price"
+                        >
+                          &#8363;279.000
+                        </span>
+                      </div>
+                    </li>
+                    <li class="header-with-search__cart-drawer-item flex">
+                      <div
+                        class="header-with-search__cart-drawer-item-img-wrapper"
+                      >
+                        <img
+                          src="./assets/img/cart/item-4.jpeg"
+                          alt="Chuột không dây Logitech M220 Silent"
+                          class="header-with-search__cart-drawer-item-img"
+                        />
+                      </div>
+                      <div
+                        class="header-with-search__cart-drawer-item-detail flex"
+                      >
+                        <span class="header-with-search__cart-drawer-item-name">
+                          Chuột không dây Logitech M220 Silent - giảm ồn, USB,
+                          pin 1.5 năm, phù hợp PC/Laptop
+                        </span>
+                        <span
+                          class="header-with-search__cart-drawer-item-price"
+                        >
+                          &#8363;279.000
+                        </span>
+                      </div>
+                    </li>
+                    <li class="header-with-search__cart-drawer-item flex">
+                      <div
+                        class="header-with-search__cart-drawer-item-img-wrapper"
+                      >
+                        <img
+                          src="./assets/img/cart/item-4.jpeg"
+                          alt="Chuột không dây Logitech M220 Silent"
+                          class="header-with-search__cart-drawer-item-img"
+                        />
+                      </div>
+                      <div
+                        class="header-with-search__cart-drawer-item-detail flex"
+                      >
+                        <span class="header-with-search__cart-drawer-item-name">
+                          Chuột không dây Logitech M220 Silent - giảm ồn, USB,
+                          pin 1.5 năm, phù hợp PC/Laptop
+                        </span>
+                        <span
+                          class="header-with-search__cart-drawer-item-price"
+                        >
+                          &#8363;279.000
+                        </span>
+                      </div>
+                    </li>
+                    <li class="header-with-search__cart-drawer-item flex">
+                      <div
+                        class="header-with-search__cart-drawer-item-img-wrapper"
+                      >
+                        <img
+                          src="./assets/img/cart/item-4.jpeg"
+                          alt="Chuột không dây Logitech M220 Silent"
+                          class="header-with-search__cart-drawer-item-img"
+                        />
+                      </div>
+                      <div
+                        class="header-with-search__cart-drawer-item-detail flex"
+                      >
+                        <span class="header-with-search__cart-drawer-item-name">
+                          Chuột không dây Logitech M220 Silent - giảm ồn, USB,
+                          pin 1.5 năm, phù hợp PC/Laptop
+                        </span>
+                        <span
+                          class="header-with-search__cart-drawer-item-price"
+                        >
+                          &#8363;279.000
+                        </span>
+                      </div>
+                    </li>
+                    <li class="header-with-search__cart-drawer-item flex">
+                      <div
+                        class="header-with-search__cart-drawer-item-img-wrapper"
+                      >
+                        <img
+                          src="./assets/img/cart/item-4.jpeg"
+                          alt="Chuột không dây Logitech M220 Silent"
+                          class="header-with-search__cart-drawer-item-img"
+                        />
+                      </div>
+                      <div
+                        class="header-with-search__cart-drawer-item-detail flex"
+                      >
+                        <span class="header-with-search__cart-drawer-item-name">
+                          Chuột không dây Logitech M220 Silent - giảm ồn, USB,
+                          pin 1.5 năm, phù hợp PC/Laptop
+                        </span>
+                        <span
+                          class="header-with-search__cart-drawer-item-price"
+                        >
+                          &#8363;279.000
+                        </span>
+                      </div>
+                    </li>
+                    <li class="header-with-search__cart-drawer-item flex">
+                      <div
+                        class="header-with-search__cart-drawer-item-img-wrapper"
+                      >
+                        <img
+                          src="./assets/img/cart/item-4.jpeg"
+                          alt="Chuột không dây Logitech M220 Silent"
+                          class="header-with-search__cart-drawer-item-img"
+                        />
+                      </div>
+                      <div
+                        class="header-with-search__cart-drawer-item-detail flex"
+                      >
+                        <span class="header-with-search__cart-drawer-item-name">
+                          Chuột không dây Logitech M220 Silent - giảm ồn, USB,
+                          pin 1.5 năm, phù hợp PC/Laptop
+                        </span>
+                        <span
+                          class="header-with-search__cart-drawer-item-price"
+                        >
+                          &#8363;279.000
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+                  <footer class="header-with-search__cart-drawer-item flex">
+                    <a
+                      href=""
+                      class="btn btn--primary header-with-search__cart-drawer-check-btn flex"
+                      >Xem giỏ hàng
+                    </a>
+                  </footer>
+                </div>
               </div>
-            </div>
             </a>
           </div>
         </div>
@@ -709,10 +757,15 @@
           <a href="#" class="header__sort-bar-link">Mới nhất</a>
         </li>
         <li class="header__sort-bar-item">
-          <a href="#" class="header__sort-bar-link header__sort-bar-link--active">Bán chạy</a>
+          <a
+            href="#"
+            class="header__sort-bar-link header__sort-bar-link--active"
+            >Bán chạy</a
+          >
         </li>
         <li class="header__sort-bar-item">
-          <a href="#" class="header__sort-bar-link">Giá
+          <a href="#" class="header__sort-bar-link"
+            >Giá
             <i class="header__sort-bar-icon fa-solid fa-sort"></i>
           </a>
         </li>

@@ -435,6 +435,14 @@
   height: var(--header-with-search);
 }
 
+.header-with-search__mobile-toggle-left {
+  display: none;
+}
+
+i.header-with-search__search-mobile-icon {
+  display: none;
+}
+
 /* Header with search logo */
 .header-with-search__logo-wrapper {
   display: flex;
@@ -460,7 +468,6 @@
   justify-content: flex-end;
   flex-grow: 1;
   border-radius: 2px;
-  height: var(--header-with-search);
 }
 
 /* Header with search search input */
@@ -1687,7 +1694,7 @@
   text-align: center;
 }
 
-.footer-last-info-first {
+.grid.footer-last-info-first {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
