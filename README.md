@@ -21,3 +21,6 @@ responsive, pseudo element, pseudo class
 
 ### Dec 20, 2022
 - Add grid library (lite)
+
+### Dec 24, 2022
+- Responsive Shopee
