@@ -27,7 +27,8 @@
     />
   </head>
   <body>
-    <!-- Begin: Header -->
+    <div class="app">
+      <!-- Begin: Header -->
     <header class="header">
       <!-- Top nav -->
       <nav class="top-nav grid wide pt-8 hide-on-mobile-tablet">
@@ -355,7 +356,7 @@
             </div>
 
             <!-- Header with search drawer -->
-            <div class="header-with-search__drawer">
+            <div class="header-with-search__drawer hide-on-mobile">
               <div class="header-with-search__selected">
                 <div class="header-with-search__selector-label">
                   Tại Shopee Mall
@@ -776,9 +777,9 @@
     <!-- Begin: Container Section  -->
     <div class="app__container">
       <div class="grid wide app__content">
-        <div class="grid__row">
+        <div class="row sm-gutters">
           <!-- Category -->
-          <div class="grid__col-2">
+          <div class="col l-2 m-0 c-0">
             <nav class="category-wrapper">
               <header class="category__header">
                 <i class="category__heading-icon fa-solid fa-list"></i>
@@ -904,7 +905,7 @@
           </div>
 
           <!-- Product list -->
-          <div class="grid__col-10">
+          <div class="col l-10 m-12 c-12">
             <div class="product-list">
               <!-- Sort bar -->
               <div class="sort-bar">
@@ -948,10 +949,32 @@
                 </div>
               </div>
 
+              <!-- Category on mobile -->
+              <nav class="product-filter">
+                <ul class="product-filter__list">
+                  <li class="product-filter__item">
+                    <a href="#" class="product-filter__link">Shopee Mall</a>
+                  </li>
+                  <li class="product-filter__item">
+                    <a href="#" class="product-filter__link">Freeship Xtra</a>
+                  </li>
+                  <li class="product-filter__item">
+                    <a href="#" class="product-filter__link">Shop Yêu Thích</a>
+                  </li>
+                  <li class="product-filter__item">
+                    <a href="#" class="product-filter__link">Miễn phí vận chuyển</a>
+                  </li>
+                  <li class="product-filter__item">
+                    <a href="#" class="product-filter__link">Đánh giá
+                      <i class="fa-solid fa-angle-down"></i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
               <!-- Product list view -->
               <div class="product-list-view">
-                <div class="grid__row">
-                  <div class="grid__col-2-4">
+                <div class="row sm-gutters">
+                  <div class="col l-2-4 m-4 c-6">
                     <div class="product-view__wrapper">
                       <a href="#" class="product-view">
                         <div class="product-view__img-wrapper">
@@ -1128,7 +1151,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid__col-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <div class="product-view__wrapper">
                       <a href="#" class="product-view">
                         <div class="product-view__img-wrapper">
@@ -1305,7 +1328,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid__col-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <div class="product-view__wrapper">
                       <a href="#" class="product-view">
                         <div class="product-view__img-wrapper">
@@ -1482,7 +1505,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid__col-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <div class="product-view__wrapper">
                       <a href="#" class="product-view">
                         <div class="product-view__img-wrapper">
@@ -1659,7 +1682,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid__col-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <div class="product-view__wrapper">
                       <a href="#" class="product-view">
                         <div class="product-view__img-wrapper">
@@ -1836,7 +1859,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid__col-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <div class="product-view__wrapper">
                       <a href="#" class="product-view">
                         <div class="product-view__img-wrapper">
@@ -2013,7 +2036,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid__col-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <div class="product-view__wrapper">
                       <a href="#" class="product-view">
                         <div class="product-view__img-wrapper">
@@ -2190,7 +2213,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid__col-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <div class="product-view__wrapper">
                       <a href="#" class="product-view">
                         <div class="product-view__img-wrapper">
@@ -2367,7 +2390,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid__col-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <div class="product-view__wrapper">
                       <a href="#" class="product-view">
                         <div class="product-view__img-wrapper">
@@ -2544,7 +2567,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid__col-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <div class="product-view__wrapper">
                       <a href="#" class="product-view">
                         <div class="product-view__img-wrapper">
@@ -2721,7 +2744,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid__col-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <div class="product-view__wrapper">
                       <a href="#" class="product-view">
                         <div class="product-view__img-wrapper">
@@ -2898,7 +2921,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid__col-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <div class="product-view__wrapper">
                       <a href="#" class="product-view">
                         <div class="product-view__img-wrapper">
@@ -3075,7 +3098,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid__col-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <div class="product-view__wrapper">
                       <a href="#" class="product-view">
                         <div class="product-view__img-wrapper">
@@ -3252,7 +3275,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid__col-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <div class="product-view__wrapper">
                       <a href="#" class="product-view">
                         <div class="product-view__img-wrapper">
@@ -3429,7 +3452,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid__col-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <div class="product-view__wrapper">
                       <a href="#" class="product-view">
                         <div class="product-view__img-wrapper">
@@ -3606,7 +3629,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid__col-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <div class="product-view__wrapper">
                       <a href="#" class="product-view">
                         <div class="product-view__img-wrapper">
@@ -3783,7 +3806,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid__col-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <div class="product-view__wrapper">
                       <a href="#" class="product-view">
                         <div class="product-view__img-wrapper">
@@ -3960,7 +3983,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid__col-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <div class="product-view__wrapper">
                       <a href="#" class="product-view">
                         <div class="product-view__img-wrapper">
@@ -4137,7 +4160,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid__col-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <div class="product-view__wrapper">
                       <a href="#" class="product-view">
                         <div class="product-view__img-wrapper">
@@ -4314,7 +4337,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid__col-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <div class="product-view__wrapper">
                       <a href="#" class="product-view">
                         <div class="product-view__img-wrapper">
@@ -4491,7 +4514,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid__col-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <div class="product-view__wrapper">
                       <a href="#" class="product-view">
                         <div class="product-view__img-wrapper">
@@ -4668,7 +4691,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid__col-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <div class="product-view__wrapper">
                       <a href="#" class="product-view">
                         <div class="product-view__img-wrapper">
@@ -4845,7 +4868,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid__col-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <div class="product-view__wrapper">
                       <a href="#" class="product-view">
                         <div class="product-view__img-wrapper">
@@ -5022,7 +5045,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid__col-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <div class="product-view__wrapper">
                       <a href="#" class="product-view">
                         <div class="product-view__img-wrapper">
@@ -5199,7 +5222,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid__col-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <div class="product-view__wrapper">
                       <a href="#" class="product-view">
                         <div class="product-view__img-wrapper">
@@ -5376,7 +5399,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid__col-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <div class="product-view__wrapper">
                       <a href="#" class="product-view">
                         <div class="product-view__img-wrapper">
@@ -5553,7 +5576,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid__col-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <div class="product-view__wrapper">
                       <a href="#" class="product-view">
                         <div class="product-view__img-wrapper">
@@ -5730,7 +5753,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid__col-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <div class="product-view__wrapper">
                       <a href="#" class="product-view">
                         <div class="product-view__img-wrapper">
@@ -5907,7 +5930,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid__col-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <div class="product-view__wrapper">
                       <a href="#" class="product-view">
                         <div class="product-view__img-wrapper">
@@ -6084,7 +6107,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid__col-2-4">
+                  <div class="col l-2-4 m-4 c-6">
                     <div class="product-view__wrapper">
                       <a href="#" class="product-view">
                         <div class="product-view__img-wrapper">
@@ -6317,8 +6340,8 @@
       <!-- Terms and condition -->
       <div class="footer-terms-wrapper">
         <div class="grid wide footer-terms">
-          <div class="grid__row">
-            <div class="grid__col-4 footer-terms-item-wrapper">
+          <div class="row">
+            <div class="col l-4 m-4 c-12 footer-terms-item-wrapper">
               <div class="footer-terms-item footer-terms-return">
                 <img
                   src="./assets/img/footer/terms/7-days-return.png"
@@ -6331,7 +6354,7 @@
                 </div>
               </div>
             </div>
-            <div class="grid__col-4 footer-terms-item-wrapper">
+            <div class="col l-4 m-4 c-12 footer-terms-item-wrapper">
               <div class="footer-terms-item footer-terms-protect">
                 <img
                   src="./assets/img/footer/terms/customer-protect.png"
@@ -6344,7 +6367,7 @@
                 </div>
               </div>
             </div>
-            <div class="grid__col-4 footer-terms-item-wrapper">
+            <div class="col l-4 m-4 c-12 footer-terms-item-wrapper">
               <div class="footer-terms-item footer-terms-shipping">
                 <img
                   src="./assets/img/footer/terms/shipping.png"
@@ -6364,8 +6387,8 @@
       <!-- Footer info -->
       <div class="footer-info-wrapper">
         <div class="grid wide footer-info">
-          <div class="grid__row">
-            <div class="grid__col-2-4 footer-info__col">
+          <div class="row">
+            <div class="col l-2-4 m-4 c-12 footer-info__col">
               <h2 class="footer-info__heading">CHĂM SÓC KHÁCH HÀNG</h2>
               <ul class="footer-info__list">
                 <li class="footer-info__item">
@@ -6415,7 +6438,7 @@
                 </li>
               </ul>
             </div>
-            <div class="grid__col-2-4 footer-info__col">
+            <div class="col l-2-4 m-4 c-12 footer-info__col">
               <h2 class="footer-info__heading">VỀ SHOPEE</h2>
               <ul class="footer-info__list">
                 <li class="footer-info__item">
@@ -6457,7 +6480,7 @@
                 </li>
               </ul>
             </div>
-            <div class="grid__col-2-4 footer-info__col">
+            <div class="col l-2-4 m-4 c-12 footer-info__col">
               <h2 class="footer-info__heading">THANH TOÁN</h2>
               <ul class="footer-info__list footer-info__payment-list">
                 <li class="footer-info__item footer-info__payment-item">
@@ -6648,7 +6671,7 @@
                 </li>
               </ul>
             </div>
-            <div class="grid__col-2-4 footer-info__col">
+            <div class="col l-2-4 m-4 c-4 footer-info__col">
               <h2 class="footer-info__heading">THEO DÕI CHÚNG TÔI TRÊN</h2>
               <ul class="footer-info__list">
                 <li class="footer-info__item">
@@ -6677,7 +6700,7 @@
                 </li>
               </ul>
             </div>
-            <div class="grid__col-2-4 footer-info__col">
+            <div class="col l-2-4 m-8 c-8 footer-info__col">
               <h2 class="footer-info__heading footer-info__download">
                 TẢI ỨNG DỤNG SHOPEE NGAY THÔI
               </h2>
@@ -7067,5 +7090,6 @@
       </div>
     </div>
     <!-- End: Modal -->
+    </div>
   </body>
 </html>

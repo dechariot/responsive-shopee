@@ -1,3 +1,8 @@
+/* App */
+.app {
+  overflow: hidden;
+}
+
 /* Begin: Header Section */
 .header {
   /* Header on top. 
@@ -658,7 +663,7 @@ i.header-with-search__search-mobile-icon {
 .header-with-search__cart {
   /* display: block; */
   position: relative;
-  padding: 16px;
+  padding: 0 16px;
 }
 
 .header-with-search__cart:hover {
@@ -671,12 +676,12 @@ i.header-with-search__search-mobile-icon {
 
 .header-with-search__cart-icon {
   color: var(--white-color);
-  font-size: 2.2rem;
+  font-size: 2.6rem;
 }
 
 .cart__badge {
   position: absolute;
-  top: 6px;
+  top: -8px;
   right: 4px;
   color: var(--primary-color);
   background-color: var(--white-color);
@@ -884,13 +889,12 @@ i.header-with-search__search-mobile-icon {
   display: block;
   top: 50%;
   left: 0;
-  height: 60%;
+  height: 40%;
   border-left: 1px solid rgba(0, 0, 0, 0.09);
   transform: translateY(-50%);
 }
 
-.header__sort-bar-item:first-child
-.header__sort-bar-link::before {
+.header__sort-bar-item:first-child .header__sort-bar-link::before {
   display: none;
 }
 
@@ -902,6 +906,7 @@ i.header-with-search__search-mobile-icon {
 
 .header__sort-bar-link--active {
   color: var(--primary-color);
+  box-shadow: inset 0 -2px 0;
 }
 
 /* End: Header Section */
@@ -967,6 +972,11 @@ i.header-with-search__search-mobile-icon {
   border-width: 4px 6px;
   border-style: solid;
   border-color: transparent transparent transparent var(--primary-color);
+}
+
+/* Product filter show on mobile tablet */
+.product-filter {
+  display: none;
 }
 
 /* Product list */
@@ -1273,7 +1283,7 @@ i.header-with-search__search-mobile-icon {
   font-size: 1.2rem;
   line-height: 1.2rem;
   /* Set currentColor => when change color the ele::before will change also  */
-  color: rgba(255, 212, 36, 0.9);
+  color: rgba(255, 212, 36, 1);
   background-color: currentColor;
 }
 
@@ -1496,15 +1506,15 @@ i.header-with-search__search-mobile-icon {
 }
 
 .footer-terms-return {
-  margin-right: auto;
+  justify-content: flex-start;
 }
 
 .footer-terms-protect {
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .footer-terms-shipping {
-  margin-left: auto;
+  justify-content: flex-end;
 }
 
 /* Footer info */
